@@ -1,0 +1,6 @@
+{"backend_state":"running","connection_file":"/projects/f495fefc-ad07-40d7-85d0-0e5004b08281/.local/share/jupyter/runtime/kernel-53c23f75-854d-474b-8239-23f83912a9fa.json","kernel":"ds_env","kernel_error":"","kernel_state":"idle","trust":true,"type":"settings"}
+{"end":1656361914129,"exec_count":1,"id":"0f9cdd","input":"f","kernel":"ds_env","output":{"0":{"ename":"NameError","evalue":"name 'f' is not defined","traceback":["\u001b[0;31m---------------------------------------------------------------------------\u001b[0m","\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)","Input \u001b[0;32mIn [1]\u001b[0m, in \u001b[0;36m<cell line: 1>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43mf\u001b[49m\n","\u001b[0;31mNameError\u001b[0m: name 'f' is not defined"]}},"pos":1,"start":1656361913669,"state":"done","type":"cell"}
+{"id":"062db3","input":"","pos":2,"type":"cell"}
+{"id":"36bb38","input":"","pos":0,"type":"cell"}
+{"id":0,"time":1656369489706,"type":"user"}
+{"last_load":1656361467456,"type":"file"}

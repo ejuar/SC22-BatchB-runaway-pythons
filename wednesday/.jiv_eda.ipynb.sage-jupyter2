@@ -1,0 +1,25 @@
+{"backend_state":"running","connection_file":"/projects/f495fefc-ad07-40d7-85d0-0e5004b08281/.local/share/jupyter/runtime/kernel-d311cc1a-cdec-4572-8117-33c0fa3350bb.json","kernel":"ds_env","kernel_error":"","kernel_state":"idle","trust":true,"type":"settings"}
+{"end":1656526992857,"id":"12b7e3","input":"import pandas as pc","kernel":"ds_env","no_halt":true,"pos":0,"start":1656526992513,"state":"done","type":"cell"}
+{"end":1656526993055,"id":"3c10c1","input":"car_df = pc.read_csv(\"data/car_data.csv\")","kernel":"ds_env","no_halt":true,"pos":1,"start":1656526992866,"state":"done","type":"cell"}
+{"end":1656526993102,"id":"0988a6","input":"car_df.head(5)","kernel":"ds_env","no_halt":true,"pos":2,"start":1656526993067,"state":"done","type":"cell"}
+{"end":1656526993135,"id":"a1228d","input":"car_df.tail(5)","kernel":"ds_env","no_halt":true,"pos":3,"start":1656526993108,"state":"done","type":"cell"}
+{"end":1656526993149,"id":"a04b59","input":"car_df.columns","kernel":"ds_env","no_halt":true,"pos":4,"start":1656526993139,"state":"done","type":"cell"}
+{"end":1656526993164,"id":"8f5a2d","input":"len(car_df.index)","kernel":"ds_env","no_halt":true,"pos":5,"start":1656526993153,"state":"done","type":"cell"}
+{"end":1656526993198,"id":"6753ba","input":"columns_to_drop = ['feature_0', 'feature_1', 'feature_2',\n       'feature_3', 'feature_4', 'feature_5', 'feature_6', 'feature_7',\n       'feature_8', 'feature_9']\ncar_df.drop(columns_to_drop,axis=1,inplace = True)\ncar_df.head(1)","kernel":"ds_env","no_halt":true,"pos":5.5,"start":1656526993178,"state":"done","type":"cell"}
+{"end":1656526993277,"id":"857bd2","input":"car_df.info()","kernel":"ds_env","no_halt":true,"pos":6,"start":1656526993202,"state":"done","type":"cell"}
+{"end":1656526993303,"id":"d21aac","input":"fl = car_df[car_df[\"odometer_value\"] >= 30000]\nfl['manufacturer_name'].value_counts()","kernel":"ds_env","no_halt":true,"pos":7,"start":1656526993286,"state":"done","type":"cell"}
+{"end":1656526993321,"id":"cce75d","input":"print(min(car_df[\"duration_listed\"]))","kernel":"ds_env","no_halt":true,"pos":8,"start":1656526993307,"state":"done","type":"cell"}
+{"end":1656526993339,"id":"c6ef96","input":"print(min(car_df[\"engine_capacity\"]))","kernel":"ds_env","no_halt":true,"pos":9,"start":1656526993329,"state":"done","type":"cell"}
+{"end":1656526993355,"id":"aae0f2","input":"print(max(car_df[\"odometer_value\"]))","kernel":"ds_env","no_halt":true,"pos":10,"start":1656526993343,"state":"done","type":"cell"}
+{"end":1656526994772,"id":"3b5cc6","input":"car_df.hist()","kernel":"ds_env","no_halt":true,"pos":11,"start":1656526993368,"state":"done","type":"cell"}
+{"end":1656526995146,"id":"daef40","input":"car_df.plot.scatter(x='odometer_value',y = 'duration_listed',  c='green')","kernel":"ds_env","no_halt":true,"pos":12,"start":1656526994783,"state":"done","type":"cell"}
+{"end":1656526995374,"id":"fa8e13","input":"car_df[\"color\"].value_counts().plot.pie()","kernel":"ds_env","no_halt":true,"pos":13,"start":1656526995152,"state":"done","type":"cell"}
+{"end":1656526995476,"id":"46b3a6","input":"import plotly.express as px","kernel":"ds_env","no_halt":true,"pos":13.25,"start":1656526995379,"state":"done","type":"cell"}
+{"end":1656526995960,"id":"174823","input":"fig = px.scatter(car_df, x='odometer_value',y = 'duration_listed')\nfig.show()","kernel":"ds_env","no_halt":true,"pos":13.5,"start":1656526995479,"state":"done","type":"cell"}
+{"end":1656526996530,"id":"b6e396","input":"fig = px.scatter(car_df, x='odometer_value',y = 'duration_listed',color=\"manufacturer_name\",size = \"up_counter\")\nfig.show()","kernel":"ds_env","no_halt":true,"pos":13.625,"start":1656526995990,"state":"done","type":"cell"}
+{"end":1656526996930,"id":"c42028","input":"numerical_car_df = car_df[['odometer_value', 'duration_listed', 'engine_capacity',\n       'manufacturer_name']]\nfig = px.scatter_matrix(numerical_car_df )\nfig.show()","kernel":"ds_env","no_halt":true,"pos":13.75,"start":1656526996537,"state":"done","type":"cell"}
+{"end":1656526997497,"id":"792143","input":"fig = px.scatter(car_df, x='odometer_value',y = 'duration_listed',color=\"manufacturer_name\")\nfig.show()","kernel":"ds_env","no_halt":true,"pos":13.8125,"start":1656526996954,"state":"done","type":"cell"}
+{"end":1656527001099,"id":"49a451","input":"fig = px.scatter(car_df, x='odometer_value',y = 'duration_listed',color=\"model_name\",size = \"up_counter\")\nfig.show()","kernel":"ds_env","no_halt":true,"pos":13.875,"start":1656526997506,"state":"done","type":"cell"}
+{"id":"943e7e","input":"","pos":14,"state":"done","type":"cell"}
+{"id":0,"time":1656528101091,"type":"user"}
+{"last_load":1656523929819,"type":"file"}

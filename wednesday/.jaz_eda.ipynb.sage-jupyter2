@@ -1,0 +1,21 @@
+{"backend_state":"running","connection_file":"/projects/f495fefc-ad07-40d7-85d0-0e5004b08281/.local/share/jupyter/runtime/kernel-8ec60861-82f4-4948-a26a-602a8e5beb9c.json","kernel":"ds_env","kernel_error":"","kernel_state":"idle","trust":true,"type":"settings"}
+{"cell_type":"markdown","id":"71ca06","input":"Does the manufacturer name affect the price of the used car?\n\nDoes the manufacturer name affect the duration listed of the used car?\n\nnumber\\_of\\_photos affect the duration listed of the used car?\n\n","pos":-1,"state":"done","type":"cell"}
+{"end":1656527140911,"id":"d6fb2d","input":"import pandas as pd","kernel":"ds_env","no_halt":true,"pos":0,"start":1656527140482,"state":"done","type":"cell"}
+{"end":1656527141117,"id":"1278b6","input":"car_df = pd.read_csv(\"data/car_data.csv\")","kernel":"ds_env","no_halt":true,"pos":1,"start":1656527140940,"state":"done","type":"cell"}
+{"end":1656527141137,"id":"937c55","input":"car_df.columns","kernel":"ds_env","no_halt":true,"pos":4,"start":1656527141125,"state":"done","type":"cell"}
+{"end":1656527141209,"id":"d52162","input":"car_df.info()","kernel":"ds_env","no_halt":true,"pos":6,"start":1656527141142,"state":"done","type":"cell"}
+{"end":1656527141241,"id":"140a71","input":"#Make a list of what you want to drop\ncolumns_to_drop = ['feature_0', 'feature_1', 'feature_2',\n       'feature_3', 'feature_4', 'feature_5', 'feature_6', 'feature_7',\n       'feature_8', 'feature_9']\n\n#Drop the columns using drop()\ncar_df.drop(columns_to_drop, axis=1, inplace = True) #axis = 1 lets pandas know we are dropping columns, not rows.\n\n#Check that they are dropped\ncar_df.head(1)","kernel":"ds_env","no_halt":true,"pos":6.5,"start":1656527141221,"state":"done","type":"cell"}
+{"end":1656527141257,"id":"c0e2d9","input":"car_df[\"location_region\"].value_counts()","kernel":"ds_env","no_halt":true,"pos":6.5625,"start":1656527141244,"state":"done","type":"cell"}
+{"end":1656527141295,"id":"3014a5","input":"car_df[\"location_region\"].replace({\"Минская обл.\":\"Minsk\",\"Гомельская обл.\":\"Gomel\", \"Витебская обл.\":\"Vitebsk\", \"Брестская обл.\":\"Brest\", \"Могилевская обл.\":\"Mogilev\", \"Гродненская обл.\":\"Grodno\"}, inplace=True)\ncar_df.head(1)","kernel":"ds_env","no_halt":true,"pos":6.625,"start":1656527141269,"state":"done","type":"cell"}
+{"end":1656527141314,"id":"8e1e7a","input":"car_df[\"location_region\"].value_counts()","kernel":"ds_env","no_halt":true,"pos":6.65625,"start":1656527141298,"state":"done","type":"cell"}
+{"end":1656527141347,"id":"470d06","input":"car_df.head(1)","kernel":"ds_env","no_halt":true,"pos":6.6875,"start":1656527141321,"state":"done","type":"cell"}
+{"end":1656527141410,"id":"e59e47","input":"car_df.info()","kernel":"ds_env","no_halt":true,"pos":6.75,"start":1656527141350,"state":"done","type":"cell"}
+{"end":1656527141427,"id":"7af133","input":"car_df.columns","kernel":"ds_env","no_halt":true,"pos":6.875,"start":1656527141418,"state":"done","type":"cell"}
+{"end":1656527141465,"id":"b68de8","input":"car_df.head(1)","kernel":"ds_env","no_halt":true,"pos":6.9375,"start":1656527141451,"state":"done","type":"cell"}
+{"end":1656527141492,"id":"7421bf","input":"car_df.tail(1)","kernel":"ds_env","no_halt":true,"pos":6.96875,"start":1656527141489,"state":"done","type":"cell"}
+{"end":1656527141507,"id":"7c789e","input":"fl_s = car_df[car_df[\"year_produced\"] >= 2018]\nfl_s['manufacturer_name'].value_counts()","kernel":"ds_env","no_halt":true,"pos":7,"start":1656527141496,"state":"done","type":"cell"}
+{"end":1656527141527,"id":"24ab78","input":"car_df['manufacturer_name'].value_counts()","kernel":"ds_env","no_halt":true,"pos":8,"start":1656527141510,"state":"done","type":"cell"}
+{"end":1656527141539,"id":"521bfb","input":"car_df['manufacturer_name'].nunique()","kernel":"ds_env","no_halt":true,"pos":9,"start":1656527141534,"state":"done","type":"cell"}
+{"end":1656527141553,"id":"fbd4ad","input":"car_df['transmission'].value_counts()","kernel":"ds_env","no_halt":true,"pos":10,"start":1656527141543,"state":"done","type":"cell"}
+{"id":0,"time":1656527658249,"type":"user"}
+{"last_load":1656523932933,"type":"file"}

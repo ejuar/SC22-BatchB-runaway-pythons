@@ -1,0 +1,13 @@
+{"backend_state":"running","connection_file":"/projects/f495fefc-ad07-40d7-85d0-0e5004b08281/.local/share/jupyter/runtime/kernel-794c0562-ddf2-4ae2-8537-887b7e985efe.json","kernel":"ds_env","kernel_error":"","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":0},"trust":true,"type":"settings"}
+{"cell_type":"code","id":"0182f2","input":"car_df['manufacturer_name'].nunique()","pos":9,"type":"cell"}
+{"cell_type":"code","id":"04119f","input":"car_df['manufacturer_name'].value_counts()","pos":8,"type":"cell"}
+{"cell_type":"code","id":"4c4358","input":"fl_s = car_df[car_df[\"year_produced\"] >= 2018]\nfl_s['manufacturer_name'].value_counts()","pos":7,"type":"cell"}
+{"cell_type":"code","id":"52a3c2","input":"import pandas as pd","pos":0,"type":"cell"}
+{"cell_type":"code","id":"64deb0","input":"car_df.tail(1)","pos":3,"type":"cell"}
+{"cell_type":"code","id":"ab3405","input":"car_df.columns","pos":4,"type":"cell"}
+{"cell_type":"code","id":"bcaf1a","input":"car_df.head(5)","pos":2,"type":"cell"}
+{"cell_type":"code","id":"cf0793","input":"len(car_df.index)","pos":5,"type":"cell"}
+{"cell_type":"code","id":"e4d18d","input":"car_df = pd.read_csv(\"data/car-jaz.csv\")","pos":1,"type":"cell"}
+{"cell_type":"code","id":"f53bc6","input":"car_df.info()","pos":6,"type":"cell"}
+{"id":0,"time":1656523950179,"type":"user"}
+{"last_load":1656523946731,"type":"file"}
