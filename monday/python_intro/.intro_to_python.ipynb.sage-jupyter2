@@ -144,5 +144,5 @@
 {"cell_type":"markdown","id":"f3bb4e","input":"# text\n\n","pos":11,"type":"cell"}
 {"cell_type":"markdown","id":"f96909","input":"You may notice that we have to call the function we need by placing it after the module connected by a dot\n\nBut many times, that is inconvenient and we can get around it like this","pos":141,"type":"cell"}
 {"cell_type":"markdown","id":"f9b32f","input":"Functions act like variables but instead of storing a value, they store lines of code. Below we can see how a function is created and used.\n\n","pos":76,"type":"cell"}
-{"id":0,"time":1656535338689,"type":"user"}
-{"last_load":1656523717719,"type":"file"}
+{"id":0,"time":1656608595408,"type":"user"}
+{"last_load":1656633652938,"type":"file"}

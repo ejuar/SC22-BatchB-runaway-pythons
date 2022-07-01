@@ -67,5 +67,5 @@
 {"cell_type":"markdown","id":"ffa640","input":"**TODO: Can you print the last five rows of the Island and Region columns?** \n\n","pos":32,"type":"cell"}
 {"cell_type":"raw","id":"9414ab","input":"Write up some descriptions for your findings here....\n\nThe columns \"Body mass\" and \"flipper length\" are highly correlated. They have a correlation coefficient of 0.87.\n\n\n","pos":66,"type":"cell"}
 {"cell_type":"raw","id":"b494e2","input":"What do these columns mean?\n\n'studyName' categorical nominal\n'Sample Number' categorical nominal? (depends if it's an ID or not)\n'Species' categorical nominal\n'Region' categorical nominal\n'Island' categorical nominal\n'Stage' categorical ordinal?\n'Individual ID' categorical nominal\n'Clutch Completion' categorical nominal\n'Date Egg' categorical discrete or numerical discrete\n'Culmen Length (mm)' numerical continuous\n'Culmen Depth (mm)' numerical continuous\n'Flipper Length (mm)' numerical continuous\n'Body Mass (g)' numerical continuous\n'Sex' categorical nominal (+binary)\n'Delta 15 N (o/oo)' numerical continuous\n'Delta 13 C (o/oo)' numerical continuous\n'Comments' categorical nominal","pos":14,"type":"cell"}
-{"id":0,"time":1656524337069,"type":"user"}
-{"last_load":1656523642824,"type":"file"}
+{"id":0,"time":1656608599122,"type":"user"}
+{"last_load":1656633653176,"type":"file"}

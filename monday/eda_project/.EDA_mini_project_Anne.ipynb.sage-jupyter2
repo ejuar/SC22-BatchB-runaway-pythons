@@ -58,5 +58,5 @@
 {"cell_type":"markdown","id":"f1d6c6","input":"Thank you!\n\n","pos":58,"type":"cell"}
 {"cell_type":"raw","id":"10dd9d","input":"Write up some descriptions for your findings here....\n\n- Adelie penguins are distributed evenly across all 3 islands.\n- Gentoo and Chinstrap penguins are limited to 1 island.\n- Gender is evenly distributed as well.\n\n- Culmen length and depth have a weak positive correlation since the points form clusters based on species.\n- Out of each species the male penguins tend to have larger culmen size than female penguins, with a few outliers.\n","pos":57,"type":"cell"}
 {"cell_type":"raw","id":"455fda","input":"What do these columns mean?\n'studyName' categorical nominal\n'Sample Number' categorical ordinal\n'Species' categorical nominal\n'Region' categorical nominal\n'Island' categorical nominal\n'Stage' categorical ordinal\n'Individual ID' categorical ordinal\n'Clutch Completion' categorical nominal\n'Date Egg' numerical discrete\n'Culmen Length (mm)' numerical continuous\n'Culmen Depth (mm)' numerical continuous\n'Flipper Length (mm)' numerical continuous\n'Body Mass (g)' numerical continuous\n'Sex' categorical nominal\n'Delta 15 N (o/oo)' numerical continuous\n'Delta 13 C (o/oo)' numerical continuous\n'Comments' categorical nominal","pos":11,"type":"cell"}
-{"id":0,"time":1656523721571,"type":"user"}
-{"last_load":1656523721577,"type":"file"}
+{"id":0,"time":1656643920335,"type":"user"}
+{"last_load":1656643919559,"type":"file"}
